@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wa -o  $CFILE 
+gcc -Wa -o $CFILE.o 
