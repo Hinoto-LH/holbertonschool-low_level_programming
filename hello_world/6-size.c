@@ -7,10 +7,10 @@
 */
 int main(void)
 {
-	printf("Size of a char = %d  byte(s), sizeof (char)\n");
-	printf("Size32 of an int = %d byte(s), sizeof (int)\n");
-	printf("Size32 of a long int = %d byte(s), sizeof (long int)\n");
-	printf("Size32 of a long long int = %d byte(s), sizeof (long long int)\n");
-	printf("Size32 of a float = %d byte(s), sizeof (float)\n");
+	printf("Size of a char = %d  byte(s)\n", sizeof (char));
+	printf("Size32 of an int = %d byte(s)\n", sizeof (int));
+	printf("Size32 of a long int = %d byte(s)\n", sizeof (long int));
+	printf("Size32 of a long long int = %d byte(s)\n", sizeof (long long in);
+	printf("Size32 of a float = %d byte(s)\n", sizeof (float));
 	return (0);
 }
