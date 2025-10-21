@@ -16,7 +16,7 @@ int main(void)
 	{
 		printf("the number is positif\n");
 	}
-	else if(n > 0)
+	else if(n < 0)
 		{
 			printf("the number is negative\n");
 		}
