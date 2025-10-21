@@ -16,7 +16,7 @@ int main(void)
 	}
 	else if (n < 5)
 	{
-		printf("the last digit of %d and %d is less than 6 and not 0\n", n, x);
+		printf("the last digit of %d and %d is less than 6 and not 5\n", n, x);
 	}
 	else
 	{
