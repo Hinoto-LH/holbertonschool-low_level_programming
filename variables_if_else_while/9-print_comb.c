@@ -13,9 +13,6 @@ for (a = 48; a <= 57; a++)
       putchar(32);
     }
     else
-    {
-      putchar(36);
-    }
   }
 
   return (0);
