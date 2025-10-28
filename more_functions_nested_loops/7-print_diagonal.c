@@ -13,7 +13,7 @@ int b;
 	{
 	for (a = 0; a <= n; a++)
 	{
-	for (b = 0; b <= n; b++)
+	for (b = 1; b <= n; b++)
 	{
 	if (b == a)
 	_putchar('\\');
