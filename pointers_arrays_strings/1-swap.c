@@ -8,4 +8,6 @@ int c = 0;
 *a = *b;
 *b = c;
 c = *a;
+
+swap_int(a, b);
 }
