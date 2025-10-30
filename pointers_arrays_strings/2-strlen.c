@@ -9,5 +9,5 @@ int index;
 	{
 	s++;
 	}
-return(index);
+return (index);
 }
