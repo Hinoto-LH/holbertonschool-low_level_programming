@@ -3,11 +3,11 @@
 
 void swap_int(int *a, int *b)
 {
-int c = 0;
+int c;
 
+
+c = *a;	
 *a = *b;
 *b = c;
-c = *a;
 
-swap_int(a, b);
 }
