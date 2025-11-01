@@ -1,10 +1,11 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 void rev_string(char *s)
 {
 int i = 0;
-int j = 9 -1;
+int j = strlen(s) -1;
 char k;
 
 	while (i < j)
