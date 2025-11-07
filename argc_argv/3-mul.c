@@ -10,25 +10,19 @@
  */
 int main(int argc, char *argv[])
 {
-    int num1, num2, resultat;
+	int num1, num2, resultat;
 
-    /* Vérifie que le programme reçoit exactement deux arguments */
-    if (argc != 3)
-    {
-        printf("Error\n");
-        return (1);
-    }
+	if (argc != 3)
+	{
+		printf("Error\n");
+	return (1);
+	}
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
 
-    /* Convertit les arguments (chaînes) en entiers */
-    num1 = atoi(argv[1]);
-    num2 = atoi(argv[2]);
+	resultat = num1 * num2;
 
-    /* Calcule le produit */
-    resultat = num1 * num2;
-
-    /* Affiche le résultat suivi d’un saut de ligne */
-    printf("%d\n", resultat);
-
-    return (0);
+	printf("%d\n", resultat);
+	return (0);
 }
 
