@@ -37,7 +37,7 @@ char *_strdup(char *str)
         index++;
     }
     
-    new[10] = '\0';
+    new[index] = '\0';
 
     return (new);
 }
