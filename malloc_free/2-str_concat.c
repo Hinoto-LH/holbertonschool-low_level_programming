@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * *_strdup - copies the string given as parameter
@@ -13,19 +14,20 @@ char *str_concat(char *s1, char *s2)
     char *new;
     unsigned int len = 0, len2 = 0, index = 0, index2 = 0;
 
-    if (s1 == NULL)
+    if (s1 != NULL)
     {
-        return (NULL);
+        while (s1[len] != '\0')
+        {
+            len++;
+        }
     }
 
-    while (s1[len] != '\0')
+    if (s2 != NULL)
     {
-        len++;
-    }
-
-    while (s2[len2] != '\0')
-    {
-        len2++;
+        while (s2[len2] != '\0')
+        {
+            len2++;
+        }
     }
 
     new = malloc(sizeof(char) * (len + len2 + 1));
@@ -35,22 +37,21 @@ char *str_concat(char *s1, char *s2)
         return (NULL);
     }
 
-    while (index <= len)
+    if (s1 != NULL)
     {
-        new[index] = s1[index];
-
-        index++;
+        for (index = 0; index < len; index++)
+        {
+            new[index] = s1[index];
+        }
     }
 
-    while (index2 <= len2)
+    if (s2 != NULL)
     {
-        new[index - 1] = s2[index2];
-
-        index++;
-        index2++;
+        for (index2 = 0; index2 < len2; index2++)
+        {
+            new[index + index2] = s2[index2];
+        }
     }
-
-    new[index - 1] = '\0';
 
     return (new);
 }
