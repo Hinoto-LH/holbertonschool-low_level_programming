@@ -2,6 +2,11 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+/**
+ * print_numbers - prints numbers given as parameters
+ * @separator: string to be printed between numbers
+ * @n: number of integers passed to the function
+ */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
     va_list par;
@@ -20,6 +25,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
             printf ("%s", separator);
         }
     }
-    printf ("\n");
     va_end (par);
+    printf ("\n");
 }
