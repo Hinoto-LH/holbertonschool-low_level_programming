@@ -14,7 +14,7 @@ void print_all(const char * const format, ...)
 
 	va_start(list, format);
 
-	if (format) // si format n'est pas NULL
+	if (format) /* si format n'est pas NULL */
 	{
 		while (format[i])
 		{
