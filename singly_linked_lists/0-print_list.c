@@ -1,9 +1,8 @@
-#include <stdio.h>
 #include "lists.h"
 
 size_t print_list(const list_t *h)
 {
-	size_t elements = 0;
+	size_t numbElements = 0;
 
 	while (h != NULL)
 	{
@@ -12,9 +11,9 @@ size_t print_list(const list_t *h)
 		else
 			printf("[%d] %s\n", h->len, h->str);
 
-		elements++;
+		numbElements++;
 		h = h->next;
 	}
 
-	return (elements);
+	return (numbElements);
 }
