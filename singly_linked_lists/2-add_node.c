@@ -26,11 +26,8 @@ list_t *add_node(list_t **head, const char *str)
 	}
 	/* dupliquer la chaîne demandée */
 	newNode->str = strdup(str);
-	if (newNode->str == NULL)
-	{
-		free(newNode);
-		return (NULL);
-	}
+	/* longueur calculer manuellement */
+	newNode->len = len;
 	/* l'ancien début devient suivant du nouveau */
 	newNode->next = *head;
 	/* la tête pointe maintenant sur le nouveau */
