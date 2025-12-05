@@ -3,6 +3,7 @@
 /**
 * add_node - adds a new node at the beginning of a linked list
 * @head: adds a new node at the beginning of a linked list
+* @str: string
 *
 * return: the address of the new element, or NULL if it fails
 */
