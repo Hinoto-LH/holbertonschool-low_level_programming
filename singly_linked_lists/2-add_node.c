@@ -16,7 +16,7 @@ list_t *add_node(list_t **head, const char *str)
 	{
 		len++;
 	}
-	
+
 	/* Allocation de mémoire de la nouvelle node */
 	newNode = malloc(sizeof(list_t));
 
@@ -31,8 +31,6 @@ list_t *add_node(list_t **head, const char *str)
 		free(newNode);
 		return (NULL);
 	}
-	/* renseigner la longueur si le champ existe */
-	newNode->len = strlen(str);
 	/* l'ancien début devient suivant du nouveau */
 	newNode->next = *head;
 	/* la tête pointe maintenant sur le nouveau */
